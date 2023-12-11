@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;color: var(--clr-medium-gray);
+}
+
 body{
   font-family: 'Epilogue', sans-serif;
 }
@@ -32,33 +36,56 @@ button{
 }
 
 footer{
-  padding-inline: 20px;
+  padding-inline: 15px;
 }
 
 footer > img{
   margin-inline: 10px;
+  width: 61px;
 }
 
 footer img{
-  width: 60px;
+  /* width: 62px; */
 }
 
 h1{
-  font-size: 38px;
+  font-size: 34px;
 }
 
 p{
   line-height: 1.50;
   margin: 25px auto;
+  letter-spacing: -1px;
 }
 
 p, li{
   font-size: 18px;
   color: var(--clr-medium-gray);
+  /* border: 1px solid green; */
 }
 
 ul{
     list-style-type: none;
+}
+
+.account{
+  text-align: center;
+}
+
+.account li:nth-of-type(2){
+  border: 1.5px solid var(--clr-medium-gray);
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.closeMenu{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .flex{
@@ -71,6 +98,29 @@ ul{
   padding: 30px 20px;
 }
 
+.linkContainer{
+  margin: 40px auto;
+}
+
+.linkContainer img{
+  margin-left: 10px;
+}
+
+.linkContainer li{
+  margin-bottom: 20px;
+}
+
+.navBar{
+  width: 65%;
+  height: 200%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  background-color: white;
+  display: none;
+}
+
 .submenu{
   display: none;
 }
@@ -80,6 +130,7 @@ ul{
 .description{
   text-align: center;
   padding: 50px 20px;
+  /* border: 2px solid red; */
 }
 
 .heroMobile img{
