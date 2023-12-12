@@ -44,10 +44,6 @@ footer > img{
   width: 61px;
 }
 
-footer img{
-  /* width: 62px; */
-}
-
 h1{
   font-size: 34px;
 }
@@ -99,7 +95,7 @@ ul{
 }
 
 .linkContainer{
-  margin: 40px auto;
+  margin: 45px auto;
 }
 
 .linkContainer img{
@@ -116,9 +112,20 @@ ul{
   position: absolute;
   right: 0;
   top: 0;
+  margin-right: -65%;
   padding: 20px;
   background-color: white;
   display: none;
+  transition:  2s ease-in-out;
+  -webkit-transition:  2s ease-in-out;
+  -moz-transition:  2s ease-in-out;
+  -ms-transition:  2s ease-in-out;
+  -o-transition:  2s ease-in-out;
+}
+
+.block{
+  display: block;
+  margin-right: 0.1px;
 }
 
 .submenu{
@@ -130,7 +137,6 @@ ul{
 .description{
   text-align: center;
   padding: 50px 20px;
-  /* border: 2px solid red; */
 }
 
 .heroMobile img{
