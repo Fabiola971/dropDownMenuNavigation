@@ -35,6 +35,11 @@ button{
   -o-border-radius: 10px;
 }
 
+button:hover{
+  background-color: var(--clr-almost-white);
+  color: var(--clr-almost-black);
+}
+
 footer{
   padding-inline: 15px;
 }
@@ -84,8 +89,13 @@ ul{
   justify-content: flex-end;
 }
 
+button, .closeMenu, .iconHamburger{
+  cursor: pointer;
+}
+
 .flex{
   display: flex;
+  border: 2px solid red;
 }
 
 .headerMobile{
@@ -123,17 +133,16 @@ ul{
   -o-transition:  2s ease-in-out;
 }
 
+.submenu{
+  display: none;
+}
+
 .block{
   display: block;
   margin-right: 0.1px;
 }
 
-.submenu{
-  display: none;
-}
-
 /* HERO MOBILE */
-
 .description{
   text-align: center;
   padding: 50px 20px;
@@ -141,4 +150,73 @@ ul{
 
 .heroMobile img{
   width: 100%;
+}
+
+/* HERO DESKTOP */
+.heroDesktop{
+  display: none;
+}
+
+/*  */
+.heroMobile{
+  border: 2px solid rgb(65, 99, 140);
+}
+
+.description{
+  border: 2px solid rgb(182, 63, 63);
+}
+
+article{
+  border: 2px solid black;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 1000px){
+  article{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .closeMenu,.iconHamburger{
+    display: none;
+  }
+
+  .linkContainer, .account, .account ul{
+    display: flex;
+    /* border: 2px solid turquoise; */
+  }
+
+  .linkContainer{
+    border: 2px solid turquoise;
+  }
+
+  .navBar{
+    display: flex;
+    justify-content: flex-start;
+    left: 10%;
+    /* margin-right: 0; */
+    background-color: transparent;
+  }
+
+  /* HERO DESKTOP */
+  .heroMobile{
+    display: none;
+  }
+
+/* PICTURE DESKTOP APPEAR */
+  .heroDesktop{
+    display: flex;
+  }
+
+  .heroDesktop img{
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media  (min-width: 1440px){
+  .iconHamburger{
+    display: none;
+  }
 }

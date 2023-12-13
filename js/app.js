@@ -10,10 +10,12 @@ console.log(closeMenu);
 
 
 hamburger.addEventListener('click', ()=>{
+    console.log('ok')
     navBar.classList.toggle('block');
 });
 
 closeMenu.addEventListener('click', ()=>{
+    console.log('ok')
     navBar.classList.toggle('block');
 
 });
