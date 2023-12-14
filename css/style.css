@@ -185,13 +185,30 @@ article{
 
   .account{
     align-items: center;
+    justify-content: baseline;
+    border: 2px solid green;
+    margin-left: 38.5%
+  }
+
+  .account li a:hover{
+    color: var(--clr-almost-black);
+    border-color: var(--clr-almost-black);
   }
 
   .account li:nth-of-type(2){
     margin-top: 0;
   }
 
-  .closeMenu,.iconHamburger{
+  .account ul li:first-child{
+    margin-top: 13.5px;
+  }
+
+  .account ul li:nth-child(2){
+    margin-bottom: 28px;
+    margin-inline: 20px;
+  }
+
+  .closeMenu, .iconHamburger{
     display: none;
   }
 
@@ -202,6 +219,22 @@ article{
 
   .linkContainer{
     border: 2px solid turquoise;
+  }
+
+  .linkContainer li a:hover, .linkContainer img:hover{
+    color: var(--clr-almost-black);
+  }
+
+  .linkContainer img{
+    position: relative;
+    right: -80px;
+    top: -20px;
+  }
+
+  .linkContainer li{
+    padding-inline: 20px;
+    margin-inline: 20px;
+    border: 2px solid greenyellow;
   }
 
   .navBar{
