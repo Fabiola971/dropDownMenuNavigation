@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
 :root{
   --clr-almost-white: hsl(0, 0%, 98%);
   --clr-medium-gray: hsl(0, 0%, 41%);
@@ -40,6 +40,11 @@ button:hover{
   color: var(--clr-almost-black);
   border: 2px solid var(--clr-medium-gray);
 }
+
+button, .closeMenu, .iconHamburger{
+  cursor: pointer;
+}
+
 
 footer{
   padding-inline: 15px;
@@ -90,9 +95,6 @@ ul{
   justify-content: flex-end;
 }
 
-button, .closeMenu, .iconHamburger{
-  cursor: pointer;
-}
 
 .flex{
   display: flex;
@@ -187,7 +189,7 @@ article{
     align-items: center;
     justify-content: baseline;
     border: 2px solid green;
-    margin-left: 38.5%
+    margin-left: 58%
   }
 
   .account li a:hover{
@@ -212,6 +214,11 @@ article{
     display: none;
   }
 
+  .headerMobile img{
+    width: 84px;
+    height: 27px;
+  }
+
   .linkContainer, .account, .account ul{
     display: flex;
     /* border: 2px solid turquoise; */
@@ -232,8 +239,8 @@ article{
   }
 
   .linkContainer li{
-    padding-inline: 20px;
-    margin-inline: 20px;
+    padding-inline: 25px;
+    /* margin-inline: 10px; */
     border: 2px solid greenyellow;
   }
 
@@ -253,6 +260,11 @@ article{
   }
 
 /* PICTURE DESKTOP APPEAR */
+  .description{
+    text-align: left;
+    margin-left: 12%;
+  }
+
   .heroDesktop{
     display: flex;
   }
@@ -260,6 +272,10 @@ article{
   .heroDesktop img{
     width: 80%;
     height: 80%;
+  }
+
+  h1{
+    font-size: 61px;
   }
 
   
