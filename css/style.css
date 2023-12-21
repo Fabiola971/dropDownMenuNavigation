@@ -20,6 +20,7 @@ a{
 
 body{
   font-family: 'Epilogue', sans-serif;
+  width: 100%;
 }
 
 button{
@@ -44,7 +45,6 @@ button:hover{
 button, .closeMenu, .iconHamburger{
   cursor: pointer;
 }
-
 
 footer{
   padding-inline: 15px;
@@ -95,7 +95,6 @@ ul{
   justify-content: flex-end;
 }
 
-
 .flex{
   display: flex;
   border: 2px solid red;
@@ -107,8 +106,9 @@ ul{
   padding: 30px 20px;
 }
 
-.linkContainer{
+.linkContainer, .account{
   margin: 45px auto;
+  margin-top: 0;
 }
 
 .linkContainer img{
@@ -185,11 +185,21 @@ article{
     display: flex;
   }
 
+  footer{
+    margin-left: 9%;
+  }
+  
+  footer > img{
+    margin-inline: 10px;
+    width: 101px;
+  }
+  
   .account{
     align-items: center;
     justify-content: baseline;
     border: 2px solid green;
-    margin-left: 58%
+    /* margin-left: 58%; */
+    margin-right: -25%;
   }
 
   .account li a:hover{
@@ -202,16 +212,20 @@ article{
   }
 
   .account ul li:first-child{
-    margin-top: 13.5px;
+    margin-top: -20.5px;
   }
 
   .account ul li:nth-child(2){
-    margin-bottom: 28px;
+    margin-top: -34px;
     margin-inline: 20px;
   }
 
   .closeMenu, .iconHamburger{
     display: none;
+  }
+
+  .flex{
+    margin-top: 23px;
   }
 
   .headerMobile img{
@@ -228,7 +242,7 @@ article{
     border: 2px solid turquoise;
   }
 
-  .linkContainer li a:hover, .linkContainer img:hover{
+  .linkContainer li a:hover, .linkContainer li img:hover{
     color: var(--clr-almost-black);
   }
 
@@ -262,7 +276,13 @@ article{
 /* PICTURE DESKTOP APPEAR */
   .description{
     text-align: left;
-    margin-left: 12%;
+    margin-left: 9.5%;
+    padding-left: 0;
+    padding-right: 10%;
+  }
+
+  .description p{
+    min-width: 400px;
   }
 
   .heroDesktop{
@@ -271,14 +291,23 @@ article{
 
   .heroDesktop img{
     width: 80%;
-    height: 80%;
+    height: 110%;
+    padding-left: 10%;
   }
 
   h1{
-    font-size: 61px;
+    font-size: 78px;
+    display: flex;
+    flex-direction:column;
+    position: relative;
   }
 
-  
+  h1 span:nth-child(2){
+    position: absolute;
+    top: 80px;
+    left: 310px;
+  }
+ 
 }
 
 @media  (min-width: 1440px){
