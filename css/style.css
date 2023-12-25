@@ -48,6 +48,7 @@ button, .closeMenu, .iconHamburger{
 
 footer{
   padding-inline: 15px;
+  text-align: center;
 }
 
 footer > img{
@@ -98,6 +99,7 @@ ul{
 .flex{
   display: flex;
   border: 2px solid red;
+  width: min-content;
 }
 
 .headerMobile{
@@ -138,13 +140,26 @@ ul{
 
 .submenu{
   display: none;
+  position: absolute;
+  padding-top: 20px;
+  background-color: beige;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 1px 0px 28px -17px #351C4D;
 }
 
+.submenu img{
+  margin-right: 20px;
+}
+/*
 .block{
   display: block;
   margin-right: 0.1px;
 }
-
+*/
 /* HERO MOBILE */
 .description{
   text-align: center;
@@ -240,22 +255,49 @@ article{
 
   .linkContainer{
     border: 2px solid turquoise;
+    position: relative;
   }
+
+  .linkContainer li:first-child:hover .submenu{
+    display: block;
+    left: -40px;
+  }
+
+  .linkContainer li:nth-child(2):hover .submenu{
+    display: block;
+    padding-right: 30px;
+    left: 20px;
+  }
+
+  .submenu li {
+    width: max-content;
+  }
+
+
+/*
+  .linkContainer li:hover .submenu{
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: beige;
+  /* } */
 
   .linkContainer li a:hover, .linkContainer li img:hover{
     color: var(--clr-almost-black);
   }
 
   .linkContainer img{
-    position: relative;
-    right: -80px;
-    top: -20px;
+    /* position: relative; */
+    /* right: -80px; */
+    /* top: -20px; */
   }
 
   .linkContainer li{
     padding-inline: 25px;
     /* margin-inline: 10px; */
     border: 2px solid greenyellow;
+    position: relative;
+
   }
 
   .navBar{
@@ -307,7 +349,6 @@ article{
     top: 80px;
     left: 310px;
   }
- 
 }
 
 @media  (min-width: 1440px){
