@@ -97,9 +97,7 @@ ul{
 }
 
 .flex{
-  display: flex;
-  border: 2px solid red;
-  width: min-content;
+  border: 2px solid red; 
 }
 
 .headerMobile{
@@ -108,9 +106,8 @@ ul{
   padding: 30px 20px;
 }
 
-.linkContainer, .account{
+.linkContainer{
   margin: 45px auto;
-  margin-top: 0;
 }
 
 .linkContainer img{
@@ -121,15 +118,14 @@ ul{
   margin-bottom: 20px;
 }
 
-.navBar{
+.menuCollapse{
   width: 65%;
-  height: 200%;
+  background-color: bisque;
+  margin-left: 35%;
+  padding: 18px;
   position: absolute;
-  right: 0;
   top: 0;
-  margin-right: -65%;
-  padding: 20px;
-  background-color: white;
+  height: 100%;
   display: none;
   transition:  2s ease-in-out;
   -webkit-transition:  2s ease-in-out;
@@ -154,12 +150,12 @@ ul{
 .submenu img{
   margin-right: 20px;
 }
-/*
+
 .block{
   display: block;
   margin-right: 0.1px;
 }
-*/
+
 /* HERO MOBILE */
 .description{
   text-align: center;
@@ -255,7 +251,7 @@ article{
 
   .linkContainer{
     border: 2px solid turquoise;
-    position: relative;
+    /* position: relative; */
   }
 
   .linkContainer li:first-child:hover .submenu{
@@ -309,6 +305,7 @@ article{
     padding: 0;
     background-color: transparent;
   }
+  
 
   /* HERO DESKTOP */
   .heroMobile{
