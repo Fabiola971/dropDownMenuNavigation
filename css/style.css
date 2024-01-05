@@ -96,14 +96,15 @@ ul{
   justify-content: flex-end;
 }
 
-.flex{
-  border: 2px solid red; 
-}
-
 .headerMobile{
   display: flex;
   justify-content: space-between;
   padding: 30px 20px;
+}
+
+.iconArrow{
+  display: flex;
+  align-items: center;
 }
 
 .iconUp{
@@ -130,14 +131,24 @@ ul{
   display: none;  
 }
 
+.linkContainer li:first-child:hover .submenu{
+  display: block;
+  padding: 20px 0 0 10px;
+}  
+
+.linkContainer li:nth-child(2):hover .submenu{
+  display: block;
+  padding: 20px 0 0 20px;
+}
+
 .menuCollapse{
   width: 65%;
-  background-color: bisque;
+  background-color: rgb(255, 255, 255);
   margin-left: 35%;
   padding: 18px;
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 500%;
   display: none;
   transition: all 2s ease-in-out;
   -webkit-transition: all 2s ease-in-out;
@@ -148,14 +159,6 @@ ul{
 
 .submenu{
   display: none;
-  position: absolute;
-  padding-top: 20px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  box-shadow: 1px 0px 28px -15px #351C4D;
 }
 
 .submenu img{
@@ -164,8 +167,7 @@ ul{
 
 .block.menuCollapse{
   display: block;
-  margin-right: 0.1px;
-  
+  margin-right: 0.1px;  
 }
 
 /* HERO MOBILE */
@@ -225,7 +227,7 @@ article{
   
   .account{
     position: relative;
-    top: 9px;
+    top: 15px;
     align-items: end;
     margin-right: -25%;
   }
@@ -267,19 +269,15 @@ article{
 
   .linkContainer, .account, .account ul{
     display: flex;
-    /* border: 2px solid turquoise; */
   }
 
   .linkContainer{
-    border: 2px solid turquoise;
-    margin: 22.5px auto 0;
+    margin: 30px auto 0;
   }
 
   .linkContainer li{
     margin-bottom: 0;
   }
-
-  
 
   .linkContainer li:first-child:hover .submenu{
     display: block;
@@ -288,8 +286,21 @@ article{
 
   .linkContainer li:nth-child(2):hover .submenu{
     display: block;
-    padding-right: 30px;
+    padding-left: 0;
     left: 20px;
+  }
+
+  .submenu{
+    display: none;
+    position: absolute;
+    top: 25px;
+    padding-top: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 1px 0px 28px -15px #351C4D;
   }
 
   .submenu li {
@@ -297,31 +308,13 @@ article{
     margin-bottom: 20px;
   }
 
-
-/*
-  .linkContainer li:hover .submenu{
-    display: block;
-    position: absolute;
-    left: 0;
-    background-color: beige;
-  /* } */
-
   .linkContainer li a:hover, .linkContainer li img:hover{
     color: var(--clr-almost-black);
   }
 
-  .linkContainer img{
-    /* position: relative; */
-    /* right: -80px; */
-    /* top: -20px; */
-  }
-
   .linkContainer li{
     padding-inline: 25px;
-    /* margin-inline: 10px; */
-    border: 2px solid greenyellow;
     position: relative;
-
   }
 
   .menuCollapse{
@@ -336,7 +329,6 @@ article{
     background-color: transparent;
   }
   
-
   /* HERO DESKTOP */
   .heroMobile{
     display: none;
@@ -379,8 +371,3 @@ article{
   }
 }
 
-@media  (min-width: 1440px){
-  .iconHamburger{
-    display: none;
-  }
-}
