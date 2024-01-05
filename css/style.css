@@ -69,7 +69,7 @@ p{
 p, li{
   font-size: 18px;
   color: var(--clr-medium-gray);
-  /* border: 1px solid green; */
+  
 }
 
 ul{
@@ -185,19 +185,6 @@ ul{
   display: none;
 }
 
-/*  */
-.heroMobile{
-  /* border: 2px solid rgb(65, 99, 140); */
-}
-
-.description{
-  /* border: 2px solid rgb(182, 63, 63); */
-}
-
-article{
-  /* border: 2px solid black; */
-}
-
 /* MEDIA QUERIES */
 @media (min-width: 1440px){
   article{
@@ -218,6 +205,8 @@ article{
   footer{
     margin-left: 9%;
     text-align: start;
+    position: relative;
+    bottom: 80px;
   }
   
   footer > img{
@@ -353,7 +342,7 @@ article{
 
   .heroDesktop img{
     width: 80%;
-    height: 105%;
+    height: 95%;
     padding-left: 15%;
   }
 
