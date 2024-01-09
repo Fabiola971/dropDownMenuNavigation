@@ -150,11 +150,6 @@ ul{
   top: 0;
   height: 500%;
   display: none;
-  transition: all 2s ease-in-out;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -ms-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
 }
 
 .submenu{
@@ -193,15 +188,6 @@ ul{
     flex-direction: row-reverse;
   }
 
-  header{
-    display: flex;
-  }
-
-  nav{
-    display: flex;
-    width: 100%;
-  }
-
   footer{
     margin-left: 9%;
     text-align: start;
@@ -212,6 +198,28 @@ ul{
   footer > img{
     margin-inline: 10px;
     width: 101px;
+  }
+
+  h1{
+    font-size: 78px;
+    display: flex;
+    flex-direction:column;
+    position: relative;
+  }
+
+  h1 span:nth-child(2){
+    position: absolute;
+    top: 80px;
+    left: 310px;
+  }
+
+  header{
+    display: flex;
+  }
+
+  nav{
+    display: flex;
+    width: 100%;
   }
   
   .account{
@@ -344,19 +352,6 @@ ul{
     width: 80%;
     height: 95%;
     padding-left: 15%;
-  }
-
-  h1{
-    font-size: 78px;
-    display: flex;
-    flex-direction:column;
-    position: relative;
-  }
-
-  h1 span:nth-child(2){
-    position: absolute;
-    top: 80px;
-    left: 310px;
   }
 }
 
